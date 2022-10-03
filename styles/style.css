@@ -18,21 +18,58 @@ body {
 
 .nav {
   color: hsl(0deg, 0%, 41%);
+  height: 70px;
+  font-weight: 500;
 }
 .nav__container {
   display: flex;
   justify-content: space-between;
+  border: 1px solid red;
+  height: 100%;
 }
 .nav__section-left {
   display: flex;
   width: max-content;
   border: 1px solid black;
-  gap: 70px;
+  gap: 80px;
+  height: 100%;
+  align-items: center;
 }
 .nav__list {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 50px;
+}
+.nav__item a {
+  text-decoration: none;
+}
+.nav__section-right {
+  border: 1px solid green;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav__button {
+  width: 110px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.nav__button:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+.nav__button--register {
+  border: 2px solid hsl(0deg, 0%, 41%);
+}
+.nav__button--register:hover {
+  border: 2px solid hsl(0deg, 0%, 8%);
+}
+.nav__hamburguer {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

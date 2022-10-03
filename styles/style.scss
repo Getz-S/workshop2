@@ -31,22 +31,68 @@ body{
 
 .nav {
     color: $color-text;
+    height: 70px;
+    font-weight: 500;
     &__container {
         display: flex;
         justify-content: space-between;
+        border: 1px solid red;
+        height: 100%;
     }
 
     &__section-left{
         display: flex;
         width: max-content;
         border: 1px solid black;
-        gap: 70px
+        gap: 80px;
+        height: 100%;
+        align-items: center;
     }
 
     &__list{
         display: flex;
         list-style: none;
-        gap: 30px;
+        gap: 50px;
+    }
+
+    &__item{
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__section-right{
+        border: 1px solid green;
+        width: max-content;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__button{
+        width: 110px;
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        background: none;
+        font-size: $font-size-body;
+        cursor: pointer;
+        &:hover{
+            color: $color-title-main;
+        }
+
+        &--register{
+            border: 2px solid $color-text;
+            &:hover{
+                border: 2px solid $color-title-main;
+            }
+        }
+    }
+
+    
+
+    &__hamburguer{
+        display: none;
     }
 }
 
