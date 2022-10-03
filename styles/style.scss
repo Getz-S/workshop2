@@ -22,6 +22,31 @@ $color-title-main: hsl(0, 0%, 8%);
 //Asignar propiedades al body
 
 body{
-    font-family: ;
+    font-family: $font-body;
+    font-size: $font-size-body;
+    background-color: $color-background;
+}
+
+//reglas anidadas
+
+.nav {
+    color: $color-text;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__section-left{
+        display: flex;
+        width: max-content;
+        border: 1px solid black;
+        gap: 70px
+    }
+
+    &__list{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
 }
 
