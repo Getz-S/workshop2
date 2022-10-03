@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   font-family: "Epilogue";
   font-size: 16px;
@@ -24,27 +28,52 @@ body {
 .nav__container {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
   height: 100%;
 }
 .nav__section-left {
   display: flex;
   width: max-content;
-  border: 1px solid black;
   gap: 80px;
   height: 100%;
   align-items: center;
 }
 .nav__list {
   display: flex;
-  list-style: none;
   gap: 50px;
+}
+.nav__item {
+  height: 70px;
+  line-height: 70px;
+  overflow-y: hidden;
 }
 .nav__item a {
   text-decoration: none;
+  color: hsl(0deg, 0%, 41%);
+}
+.nav__item a:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+.nav__item ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  height: max-content;
+  line-height: 2;
+  padding: 30px;
+  transform: translateX(-70px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px;
+}
+.nav__item--company ul {
+  transform: none;
+}
+.nav__item:hover > ul {
+  display: block;
+}
+.nav__subitem img {
+  margin-right: 10px;
 }
 .nav__section-right {
-  border: 1px solid green;
   width: max-content;
   display: flex;
   align-items: center;
@@ -57,7 +86,9 @@ body {
   border: none;
   background: none;
   font-size: 16px;
+  color: hsl(0deg, 0%, 41%);
   cursor: pointer;
+  font-weight: 500;
 }
 .nav__button:hover {
   color: hsl(0deg, 0%, 8%);
