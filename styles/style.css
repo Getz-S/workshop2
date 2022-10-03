@@ -103,4 +103,62 @@ body {
   display: none;
 }
 
+.main {
+  margin: 0 120px 0 168px;
+  padding: 1rem;
+}
+.main__container {
+  display: flex;
+  border: 1px solid black;
+  padding: 80px;
+}
+.main__article {
+  border: 1px solid red;
+  max-width: 800px;
+  display: flex;
+  max-height: 900px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main__heading {
+  color: hsl(0deg, 0%, 8%);
+  font-size: 76px;
+  padding: 1rem;
+  margin: 2rem 0 1.5rem 0;
+}
+.main__description {
+  max-width: 450px;
+  color: hsl(0deg, 0%, 41%);
+  max-width: 450px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+  padding-right: 2rem;
+  margin-bottom: 3.5rem;
+}
+.main__button {
+  width: 150px;
+  height: 50px;
+  border-radius: 1rem;
+  background: hsl(0deg, 0%, 8%);
+  font-size: 16px;
+  color: hsl(0deg, 0%, 98%);
+  font-weight: 700;
+  border: 1px solid var(hsl(0deg, 0%, 8%));
+}
+.main__button:hover {
+  cursor: pointer;
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 8%);
+  border: 1px solid var(hsl(0deg, 0%, 8%));
+  transition: all 0.3ms ease-out;
+}
+.main__img-container {
+  width: 700px;
+  border: 1px solid blue;
+}
+.main__img {
+  width: 500px;
+}
+
 /*# sourceMappingURL=style.css.map */
