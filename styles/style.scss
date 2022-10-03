@@ -6,4 +6,22 @@ $font-body: 'Epilogue';
 $font-size-body: 16px;
 $color-background: hsl(0, 0%, 98%);
 $color-text: hsl(0, 0%, 41%);
-$color-title-main: hsl(0, 0%, 8%)
+$color-title-main: hsl(0, 0%, 8%);
+
+
+//Declarar funciones
+
+@function size($t) {
+    @return $t*$font-size-body;
+}
+
+//importar partials o modules
+
+@import 'universals';
+
+//Asignar propiedades al body
+
+body{
+    font-family: ;
+}
+
